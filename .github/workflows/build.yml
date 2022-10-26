@@ -8,6 +8,8 @@ on:
       - master
   release:
     types: released
+  schedule: # Update artifacts
+    - cron: '43 5 28 1/3 *'
 
 env:
   CI_REQ_DOTNET_SDK_VER: 5.0.100
